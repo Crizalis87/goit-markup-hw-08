@@ -1,0 +1,9 @@
+.page-header {
+    background-color: var(--primary-bg);
+    border-bottom: 1px solid #ececec;
+}
+
+.page-header--container {
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,54 @@
+/* Styles for Section of clients */
+
+.clients {
+    background-color: var(--primary-bg);
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.clients__list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clients__item {
+    display: flex;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.clients__icon {
+    display: flex;
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--primary-social-link-color);
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &--fill {
+        fill: var(--primary-social-link-color);
+
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &:hover,
+    &:focus {
+        border-color: var(--accent-logo);
+    }
+
+    &:hover > &--fill,
+    &:focus > &--fill {
+        fill: var(--accent-logo);
+    }
+}

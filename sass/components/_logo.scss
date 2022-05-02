@@ -1,0 +1,26 @@
+/* Main properties Logo */
+.logo {
+    display: block;
+    font-family: var(--logo-font);
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 0.03em;
+    color: var(--accent-logo);
+    text-decoration: none;
+    margin-right: 94px;
+}
+
+/* Color Logo in Header */
+.logo--black {
+    color: var(--title-logo);
+}
+
+/* Color Logo in Footer */
+.logo--white {
+    color: var(--footer-logo);
+}
+
+.logo--margin {
+    display: block;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,48 @@
+/* Styles for section Global */
+
+.global__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-logo);
+    margin-bottom: 50px;
+}
+
+.global__list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    padding-left: 0px;
+}
+
+.global__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.global__thumb {
+    position: relative;
+    z-index: -1;
+
+    & > .global__label {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        width: 100%;
+        height: 70px;
+        padding: 27px 0;
+
+        font-family: 'Roboto';
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+
+        background-color: rgba(47, 48, 58, 0.8);
+        color: var(--footer-logo);
+    }
+}

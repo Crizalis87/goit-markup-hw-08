@@ -1,0 +1,75 @@
+/* Orientation elements inside Header */
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* Orientation elements inside nav-menu */
+.nav-menu {
+    display: flex;
+    list-style-type: none;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    padding-left: 0;
+    margin: 0px;
+}
+
+.nav-menu__item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.nav-menu__link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+/* ______Orientation elements inside nav-contacts */
+
+.contacts {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    margin-left: auto;
+}
+
+.contacts__link {
+    display: flex;
+    align-items: center;
+    color: var(--primary-text);
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-logo);
+    }
+}
+
+.contacts__icon {
+    fill: currentColor;
+    margin-right: 10px;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    .contacts__link:hover > & {
+        fill: var(--accent-logo);
+    }
+}
+
+.contacts__list:not(:last-child) {
+    margin-right: 50px;
+}

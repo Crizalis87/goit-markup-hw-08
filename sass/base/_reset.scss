@@ -1,0 +1,23 @@
+//  Reset styles
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+    margin: 0;
+    padding-inline-start: 0px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: var(--main-font);
+    color: var(--primary-text);
+    margin: 0px;
+}
