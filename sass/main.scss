@@ -17,9 +17,10 @@
 // header styles
 
 @import './layout/header';
-@import './components/navigation';
+@import './components/links';
 @import './components/logo';
-
+@import './components/navigation';
+@import './components/mobile-menu';
 // Hero styles
 
 @import './components/hero';
@@ -30,7 +31,7 @@
 // modal form
 @import './components/form/form-service';
 
-@import './vendors/vissualy-hidden';
+@import './utils/vissualy-hidden';
 @import './components/features';
 @import './components/global';
 @import './components/team';
