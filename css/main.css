@@ -1380,7 +1380,7 @@ body {
   flex-wrap: wrap;
   flex-basis: calc(100% - (30px * (3 - 1) / 3));
   gap: 30px;
-  justify-content: center;
+  justify-content: stretch;
 }
 
 .projects__item {
@@ -1407,6 +1407,7 @@ body {
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
+  flex-grow: 1;
 }
 
 .projects__card > p {
@@ -1423,7 +1424,8 @@ body {
 }
 
 .projects__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
   color: var(--primary-text);
