@@ -1,5 +1,14 @@
 /* Styles for section Global */
 
+.global {
+    display: none;
+}
+
+@media screen and (min-width: 1200px) {
+    .global {
+        display: block;
+    }
+}
 .global__title {
     font-weight: 700;
     font-size: 36px;

@@ -2,12 +2,18 @@
 
 .team {
     background-color: var(--team-section-bg);
-    padding-top: 94px;
+    padding-top: 60px;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+    }
 
     &__list {
         list-style-type: none;
         display: flex;
-        flex-direction: row;
+        flex-wrap: wrap;
+        flex-basis: auto;
+        gap: 30px;
         padding-left: 0px;
     }
 
@@ -18,8 +24,14 @@
             0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
 
-        &:not(:last-child) {
-            margin-right: 30px;
+        max-width: 450px;
+
+        @media screen and (min-width: 768px) {
+            max-width: 354px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            max-width: 270px;
         }
     }
 

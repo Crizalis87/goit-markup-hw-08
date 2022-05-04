@@ -2,23 +2,27 @@
 
 .clients {
     background-color: var(--primary-bg);
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 
 .clients__list {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
+    flex-basis: auto;
+    gap: 30px;
     justify-content: center;
     align-items: center;
 }
 
 .clients__item {
     display: flex;
-
-    &:not(:last-child) {
-        margin-right: 30px;
-    }
 }
 
 .clients__icon {

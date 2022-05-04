@@ -31,6 +31,12 @@
 }
 
 .logo--margin {
-    display: block;
+    display: flex;
+    justify-content: center;
+    margin-right: 0;
     margin-bottom: 20px;
+
+    @media screen and (min-width: 1200px) {
+        justify-content: flex-start;
+    }
 }
