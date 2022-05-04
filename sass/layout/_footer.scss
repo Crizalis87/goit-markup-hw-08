@@ -10,14 +10,27 @@
 
     align-items: center;
 
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
     @media screen and (min-width: 1200px) {
         flex-direction: row;
+        flex-wrap: nowrap;
         align-items: baseline;
+        justify-content: flex-start;
     }
 }
 
 .footer-contacts {
     display: block;
+
+    @media screen and (min-width: 768px) {
+        margin-right: 70px;
+    }
 
     @media screen and (min-width: 1200px) {
         margin-right: 70px;
@@ -88,8 +101,13 @@
     align-items: center;
     margin-bottom: 60px;
 
+    @media screen and (min-width: 768px) {
+        margin-left: 70px;
+    }
+
     @media screen and (min-width: 1200px) {
         justify-content: flex-start;
+        margin-left: 0px;
     }
 }
 

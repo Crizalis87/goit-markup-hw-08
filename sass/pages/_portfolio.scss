@@ -26,12 +26,13 @@
     padding-left: 0px;
     display: flex;
     flex-wrap: wrap;
-    /* flex-basis: (100% - (var(--indent) * (var(--items-number) - 1) / var(--items-number)));
-  gap: var(--indent); */
+    flex-basis: (100% - (30 * (var(3) - 1) / 3));
+    gap: 30px;
 }
 
 .projects__item {
     background-color: #ffffff;
+    z-index: 0;
 
     &:nth-child(-n + 6) {
         margin-bottom: 30px;
@@ -80,7 +81,6 @@
 
 .meta-block {
     position: relative;
-
     overflow: hidden;
 }
 
