@@ -1410,10 +1410,6 @@ body {
   flex-grow: 1;
 }
 
-.projects__card > p {
-  display: flex;
-}
-
 .project__title {
   font-weight: 700;
   font-size: 18px;
