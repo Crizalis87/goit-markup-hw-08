@@ -56,7 +56,7 @@
 
 .hero__title {
     width: 360px;
-    height: 84px;
+
     font-weight: 900;
     font-size: 26px;
     line-height: 1.62;
@@ -68,9 +68,15 @@
     margin: auto;
     margin-bottom: 30px;
 
+    @media screen and (max-width: 479px) {
+        font-size: 20px;
+        width: 300px;
+
+        line-height: 1.6;
+    }
+
     @media screen and (min-width: 1200px) {
         width: 696px;
-        height: 120px;
 
         font-size: 44px;
         line-height: 1.36;

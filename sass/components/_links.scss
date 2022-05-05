@@ -1,5 +1,5 @@
 .link {
-    list-style-type: none;
+    list-style: none;
     text-decoration: none;
     color: var(--title-logo);
     transition-property: color;
@@ -15,6 +15,7 @@
 .current-link {
     position: relative;
     color: var(--accent-logo);
+    text-decoration: none;
 
     &::after {
         content: '';
