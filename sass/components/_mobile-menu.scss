@@ -75,6 +75,10 @@
     text-align: left;
     letter-spacing: 0.02em;
     margin-bottom: auto;
+
+    @media screen and (max-width: 479px) {
+        font-size: 30px;
+    }
 }
 
 .mobile-menu__item:not(last-child) {

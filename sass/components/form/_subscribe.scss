@@ -2,9 +2,23 @@
     padding-left: 15px;
     padding-right: 15px;
 
+    @media screen and (min-width: 768px) {
+        display: flex;
+        padding-left: 15px;
+        padding-right: 15px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 685px;
+    }
     @media screen and (min-width: 1200px) {
         padding-left: 93px;
         padding-right: 0px;
+
+        display: flex;
+
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 670px;
     }
 }
 .subscribe__label {
@@ -13,6 +27,10 @@
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
+
+    @media screen and (min-width: 1200px) {
+        justify-content: flex-start;
+    }
 }
 
 .subscribe__input {

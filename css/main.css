@@ -166,7 +166,7 @@ body.no-scroll {
   display: flex;
   justify-content: center;
   margin-right: 0;
-  margin-bottom: 20px;
+  margin-bottom: 4px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -368,6 +368,12 @@ body.no-scroll {
   text-align: left;
   letter-spacing: 0.02em;
   margin-bottom: auto;
+}
+
+@media screen and (max-width: 479px) {
+  .mobile-menu__list {
+    font-size: 30px;
+  }
 }
 
 .mobile-menu__item:not(last-child) {
@@ -637,7 +643,7 @@ body.no-scroll {
   position: absolute;
   top: 50%;
   left: 50%;
-  padding: 40px;
+  padding: 30px;
   width: 100%;
   max-width: 400px;
   background-color: var(--primary-bg);
@@ -672,6 +678,13 @@ body.no-scroll {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+}
+
+@media screen and (max-width: 479px) {
+  .form-service__legend {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
 }
 
 .form-service__label {
@@ -710,12 +723,18 @@ body.no-scroll {
 
 .form-service__textarea {
   padding: 12px 16px;
-  height: 120px;
+  height: 80px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: transparent;
   resize: none;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 480px) {
+  .form-service__textarea {
+    height: 120px;
+  }
 }
 
 .form-service__input-field:focus,
@@ -1157,7 +1176,7 @@ body.no-scroll {
   .footer--positioning {
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: baseline;
     justify-content: center;
   }
 }
@@ -1177,7 +1196,7 @@ body.no-scroll {
 
 @media screen and (min-width: 768px) {
   .footer-contacts {
-    margin-right: 70px;
+    margin-right: 100px;
   }
 }
 
@@ -1255,7 +1274,7 @@ body.no-scroll {
 
 @media screen and (min-width: 1200px) {
   .footer-social {
-    justify-content: flex-start;
+    align-items: flex-start;
     margin-left: 0px;
   }
 }
@@ -1283,10 +1302,25 @@ body.no-scroll {
   padding-right: 15px;
 }
 
+@media screen and (min-width: 768px) {
+  .subscribe {
+    display: flex;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 685px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .subscribe {
     padding-left: 93px;
     padding-right: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 670px;
   }
 }
 
@@ -1296,6 +1330,12 @@ body.no-scroll {
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe__label {
+    justify-content: flex-start;
+  }
 }
 
 .subscribe__input {
