@@ -31,8 +31,9 @@
     left: 50%;
 
     padding: 40px;
-    width: 400px;
-    height: 600px;
+    width: 100%;
+    max-width: 400px;
+    // height: 600px;
     background-color: var(--primary-bg);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -42,18 +43,18 @@
     visibility: visible;
     pointer-events: initial;
 
-    transform: translate(-50%, -50%) scale(1) rotate(1turn);
+    transform: translate(-50%, -50%);
     transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1),
         transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 
     @media screen and (min-width: 480px) {
-        width: 450px;
-        height: 609px;
+        max-width: 450px;
+        // height: 609px;
     }
 
     @media screen and (min-width: 1200px) {
-        width: 528px;
-        height: 581px;
+        max-width: 528px;
+        // height: 581px;
     }
 }
 
@@ -192,48 +193,26 @@
 }
 
 .form-service__text-terms {
-    display: inline-block;
-    margin-right: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
 
-    font-family: 'Roboto';
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 1.17;
+    font-size: 12px;
+    line-height: 1.16;
     letter-spacing: 0.03em;
-
-    color: var(--primary-text);
-
-    @media screen and (min-width: 480px) {
-        font-size: 12px;
-        line-height: 1.7;
-    }
+    color: var(--primary-text-color);
 
     @media screen and (min-width: 1200px) {
         font-size: 14px;
-        line-height: 1.7;
+        line-height: 1.71;
     }
 }
 
 .form-service__link-terms {
-    display: inline-block;
-
-    font-family: 'Roboto';
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
     text-decoration: underline;
     color: var(--accent-logo);
-
-    @media screen and (min-width: 480px) {
-        font-size: 12px;
-        line-height: 1.7;
-    }
-
-    @media screen and (min-width: 1200px) {
-        font-size: 14px;
-        line-height: 1.7;
-    }
+    text-underline-position: under;
 }
 
 .form-service__checkbox-icon--active {
